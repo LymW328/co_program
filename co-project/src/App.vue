@@ -2,8 +2,9 @@
   <div id="app">
     <h1>Coffee Order App</h1>
     <div class="continer">
-      
-
+      {{menu}}
+      {{size}}
+<!-- 그리드 사용해서 구현하기 -->
     </div>
   </div>
   
@@ -13,7 +14,18 @@
 <script>
 export default {
   name: 'App',
+  computed: {
+    menu() {
+      return this.$store.state.menuList
+    },
+    size () {
+      return this.$store.state.sizeList
+    }
+  }
+
+
 }
+
 </script>
 
 <style>
