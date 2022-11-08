@@ -1,7 +1,13 @@
 <template>
   <div id="app">
     <h1>Coffee Order App</h1>
+    <div class="continer">
+      
+
+    </div>
   </div>
+  
+  
 </template>
 
 <script>
